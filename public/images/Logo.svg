@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="117.547" height="41.918" viewBox="0 0 117.547 41.918">
+  <g id="Logo" transform="translate(1.547 2)">
+    <text id="mypa" transform="translate(44 28)" fill="#000001" font-size="29" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">mypa</tspan></text>
+    <g id="Group_1" data-name="Group 1" transform="translate(0 1.076)">
+      <path id="Path_4" data-name="Path 4" d="M165.416,100.868l16.147-9.239.6,17.707-4.106,3.764-12.64,6.415Z" transform="translate(-148.675 -82.197)" fill="#92e1c5" stroke="#707070" stroke-width="1"/>
+      <g id="Icon_feather-box" data-name="Icon feather-box" transform="translate(0 0)">
+        <path id="Path_1" data-name="Path 1" d="M37.982,29.037V14.158a3.72,3.72,0,0,0-1.86-3.218L23.1,3.5a3.721,3.721,0,0,0-3.72,0L6.36,10.941A3.72,3.72,0,0,0,4.5,14.158V29.037a3.72,3.72,0,0,0,1.86,3.218l13.021,7.439a3.721,3.721,0,0,0,3.72,0l13.021-7.439a3.72,3.72,0,0,0,1.86-3.218Z" transform="translate(-4.5 -3.003)" fill="none" stroke="#00cb84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Path_2" data-name="Path 2" d="M4.905,10.44l16.239,9.394L37.383,10.44" transform="translate(-4.403 -1.219)" fill="none" stroke="#00cb84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        <path id="Path_3" data-name="Path 3" d="M18,36.75V18" transform="translate(-1.259 0.592)" fill="none" stroke="#00cb84" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
