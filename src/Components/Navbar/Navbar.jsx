@@ -71,7 +71,7 @@ export const Navbar = () => {
               <li><NavLink to="/" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>Home</NavLink></li>
               <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>About</NavLink></li>
               <li><NavLink to="/service" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>Services</NavLink></li>
-              <li><NavLink to="/blog" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>Blog</NavLink></li>
+              <li><NavLink to="/blog" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>Property</NavLink></li>
               <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-[18px] font-roboto leading-4 font-normal text-[#00CB84]" : "text-[18px] font-roboto leading-4 font-normal text-[#000001]"}>Contact</NavLink></li>
             </ul>
           </div>
@@ -92,8 +92,9 @@ export const Navbar = () => {
             <li><NavLink to="/" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Home</NavLink></li>
             <li><NavLink to="/about" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>About</NavLink></li>
             <li><NavLink to="/service" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Services</NavLink></li>
-            <li><NavLink to="/blog" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Blog</NavLink></li>
+            <li><NavLink to="/blog" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Property</NavLink></li>
             <li><NavLink to="/contact" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Contact</NavLink></li>
+            <li><NavLink to="/login" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Login</NavLink></li>
             <li><Link to="#" className="px-5 py-3 bg-[#00CB84] rounded-lg text-[18px] font-roboto font-normal text-white">Post Free Ads</Link></li>
           </ul>
         </div>

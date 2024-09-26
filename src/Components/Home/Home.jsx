@@ -2,7 +2,6 @@ import React from 'react'
 import '../Home/home.css'
 import { ButtonOne } from './homeCompo/ButtonOne'
 import { FaSearch } from "react-icons/fa";
-import { Footer } from '../footer/Footer';
 import { SliderImage } from './homeCompo/SliderImage';
 import PricingPlan from './homeCompo/PricingPlan';
 import { Advertise } from './homeCompo/Advertise';
