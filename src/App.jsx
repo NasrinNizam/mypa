@@ -13,6 +13,8 @@ import { ProfilePage } from './Pages/ProfilePage'
 import { LoginPage } from './Pages/LoginPage'
 import { ToastContainer } from 'react-toastify'
 import { LayoutTwo } from './Layouts/LayoutTwo'
+import { PropertyCard } from './Components/property/PropertyCard'
+import { Commercial } from './Components/property/Commercial'
 function App() {
   const route = createBrowserRouter(
     createRoutesFromElements(
@@ -25,6 +27,8 @@ function App() {
           <Route path='/contact' element={<ContactPage />}/>
           <Route path='/registration' element={<Registration />}/>
           <Route path='/login' element={<LoginPage />}/>
+          <Route path='/residential' element={<PropertyCard />}/>
+          <Route path='/commercial' element={<Commercial />}/>
         </Route>
         <Route path='/layoutTwo' element={<LayoutTwo/>}>
           <Route path='/layoutTwo/profilePage' element={<ProfilePage/>}/>

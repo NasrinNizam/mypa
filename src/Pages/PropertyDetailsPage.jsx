@@ -1,10 +1,10 @@
 import React from 'react'
 import { PropertyDetails } from '../Components/property/PropertyDetails'
 
-export const ContactPage = () => {
+export const PropertyDetailsPage = () => {
   return (
     <div>
-      <PropertyDetails />
+        <PropertyDetails />
     </div>
   )
 }
