@@ -63,7 +63,7 @@ export const PropertyCard = () => {
       <div className="relative">
         <img
           className="w-full h-56 object-cover"
-          src="/images/imageOne.png"
+          src={item.image}
           alt="Property"
           />
         {/* Badges */}

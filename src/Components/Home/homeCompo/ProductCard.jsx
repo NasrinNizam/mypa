@@ -37,7 +37,7 @@ const ProductCard = () => {
            {/* Image and Heart Icon */}
            <div className="relative">
              <img
-               src="/images/grocery.png" // Replace with actual product image URL
+               src={item.image} // Replace with actual product image URL
                alt="Product"
                className="w-full h-48 object-cover"
                />

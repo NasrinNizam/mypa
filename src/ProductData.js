@@ -8,7 +8,7 @@ const Product =[
       "ratings": 4.7,
       "price": 699,
       "type": "featured",
-      "image": "smartphone.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvmQCnLLbDR-f1_1_GD2yC8dGVG3OZfAkRCQ&s"
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@ const Product =[
       "ratings": 4.8,
       "price": 50000,
       "type": "new",
-      "image": "luxury_suv.jpg"
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/023/192/562/small_2x/sport-car-running-on-the-road-in-future-city-created-with-generative-ai-free-photo.jpg"
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@ const Product =[
       "ratings": 4.6,
       "price": 100,
       "type": "sold",
-      "image": "gourmet_meals.jpg"
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       "id": 4,
@@ -41,7 +41,7 @@ const Product =[
       "ratings": 4.9,
       "price": 500,
       "type": "featured",
-      "image": "coding_bootcamp.jpg"
+      "image": "https://static.wixstatic.com/media/65246d_c7bd3ba476fb4191af59a11494ad027f~mv2.jpg/v1/fill/w_820,h_460,al_c,q_85/65246d_c7bd3ba476fb4191af59a11494ad027f~mv2.jpg"
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@ const Product =[
       "ratings": 4.4,
       "price": 200,
       "type": "new",
-      "image": "fitness_equipment.jpg"
+      "image": "https://www.homefitnesscode.com/cdn/shop/articles/various_fitness_equipment_2000x.jpg?v=1622715620"
     },
     {
       "id": 6,
@@ -63,7 +63,7 @@ const Product =[
       "ratings": 4.5,
       "price": 50,
       "type": "sold",
-      "image": "organic_vegetables.jpg"
+      "image": "https://png.pngtree.com/png-vector/20230905/ourmid/pngtree-composition-with-grocery-products-in-shopping-basket-diet-png-image_9948113.png"
     },
     {
       "id": 7,
@@ -74,7 +74,7 @@ const Product =[
       "ratings": 4.7,
       "price": 150000,
       "type": "featured",
-      "image": "luxury_apartment.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2heEAr62IA8aYpqsaA_EiI-cMDzmaKRZGIA&s"
     },
     {
       "id": 8,
@@ -85,7 +85,7 @@ const Product =[
       "ratings": 4.6,
       "price": 20,
       "type": "new",
-      "image": "italian_pizza.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
     },
     {
       "id": 9,
@@ -96,7 +96,7 @@ const Product =[
       "ratings": 4.8,
       "price": 1200,
       "type": "sold",
-      "image": "smart_tv.jpg"
+      "image": "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/global/news/5.jpg"
     },
     {
       "id": 10,
@@ -107,7 +107,7 @@ const Product =[
       "ratings": 4.2,
       "price": 40,
       "type": "new",
-      "image": "natural_supplements.jpg"
+      "image": "https://www.hollywoodpresbyterian.com/wp-content/uploads/2023/02/blog-immune.jpg"
     },
     {
       "id": 11,
@@ -118,7 +118,7 @@ const Product =[
       "ratings": 4.9,
       "price": 45000,
       "type": "featured",
-      "image": "electric_sedan.jpg"
+      "image": "https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80"
     },
     {
       "id": 12,
@@ -129,7 +129,7 @@ const Product =[
       "ratings": 4.5,
       "price": 25,
       "type": "new",
-      "image": "gourmet_chocolate.jpg"
+      "image": "https://www.thespruceeats.com/thmb/FhHcgQni8lgV0griUeDJMTAszxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chocolate_hero1-d62e5444a8734f8d8fe91f5631d51ca5.jpg"
     },
     {
       "id": 13,
@@ -140,7 +140,7 @@ const Product =[
       "ratings": 4.6,
       "price": 80,
       "type": "sold",
-      "image": "seafood_restaurant.jpg"
+      "image": "https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg"
     },
     {
       "id": 14,
@@ -151,7 +151,7 @@ const Product =[
       "ratings": 4.4,
       "price": 30,
       "type": "featured",
-      "image": "daily_essentials.jpg"
+      "image": "https://thumbs.dreamstime.com/b/set-grocery-items-vegetables-canned-food-pasta-oil-cereal-green-eco-shopping-bag-white-background-top-view-181827099.jpg"
     },
     {
       "id": 15,
@@ -162,7 +162,7 @@ const Product =[
       "ratings": 4.7,
       "price": 150,
       "type": "new",
-      "image": "language_courses.jpg"
+      "image": "https://www.aihr.com/wp-content/uploads/learning-vs-training-cover.png"
     },
     {
       "id": 16,
@@ -173,7 +173,7 @@ const Product =[
       "ratings": 4.8,
       "price": 200,
       "type": "sold",
-      "image": "wireless_headphones.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpiJFhKDwdsuAmso9FJ1DSckOdhI_VNhTdA&s"
     },
     {
       "id": 17,
@@ -184,7 +184,7 @@ const Product =[
       "ratings": 4.5,
       "price": 70,
       "type": "featured",
-      "image": "skin_care.jpg"
+      "image": "https://puresense.co.in/cdn/shop/articles/1_d95e1a0b-2e3f-4a0b-a604-6b2eef1d498c.jpg?v=1668491116"
     },
     {
       "id": 18,
@@ -195,7 +195,7 @@ const Product =[
       "ratings": 4.6,
       "price": 30,
       "type": "new",
-      "image": "pasta_kit.jpg"
+      "image": "https://pastaevangelists.com/cdn/shop/products/gifts-by-pasta-evangelists-classic-pasta-making-kit-29660967239789@2x.jpg?v=1686242777"
     },
     {
       "id": 19,
@@ -206,7 +206,7 @@ const Product =[
       "ratings": 4.8,
       "price": 22000,
       "type": "sold",
-      "image": "compact_car.jpg"
+      "image": "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&height=900&width=1600&fit=bounds"
     },
     {
       "id": 20,
@@ -217,7 +217,7 @@ const Product =[
       "ratings": 4.4,
       "price": 60,
       "type": "new",
-      "image": "tropical_fruits.jpg"
+      "image": "https://www.shutterstock.com/image-photo/assorted-fresh-groceries-falling-paper-260nw-2259056413.jpg"
     },
     {
       "id": 21,
@@ -228,7 +228,7 @@ const Product =[
       "ratings": 4.9,
       "price": 500000,
       "type": "featured",
-      "image": "spacious_villa.jpg"
+      "image": "https://t4.ftcdn.net/jpg/03/70/64/43/360_F_370644357_MDF4UXLAXTyyi2OyuK66tWW9cA2f8svL.jpg"
     },
     {
       "id": 22,
@@ -239,7 +239,7 @@ const Product =[
       "ratings": 4.5,
       "price": 30,
       "type": "new",
-      "image": "cozy_cafe.jpg"
+      "image": "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     },
     {
       "id": 23,
@@ -250,7 +250,7 @@ const Product =[
       "ratings": 4.6,
       "price": 250,
       "type": "sold",
-      "image": "smartwatch.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKODD4LTCYKpJTC5ET6TF2_F25yDHGJ6A-xg&s"
     },
     {
       "id": 24,
@@ -261,7 +261,7 @@ const Product =[
       "ratings": 4.9,
       "price": 300,
       "type": "featured",
-      "image": "marketing_course.jpg"
+      "image": "https://t4.ftcdn.net/jpg/09/28/79/89/360_F_928798982_PVkrws74x6Z0KcgQrhoRqpHPTiWPvPXu.jpg"
     },
     {
       "id": 25,
@@ -272,7 +272,7 @@ const Product =[
       "ratings": 4.5,
       "price": 40,
       "type": "new",
-      "image": "organic_dairy.jpg"
+      "image": "https://media.istockphoto.com/id/915312176/vector/canned-goods-in-a-row.jpg?s=612x612&w=0&k=20&c=HgnYqvDLumZj0OwpV38TbNym4mJXs9vF5ESAKfcgDFo="
     },
     {
       "id": 26,
@@ -283,7 +283,7 @@ const Product =[
       "ratings": 4.7,
       "price": 100,
       "type": "sold",
-      "image": "yoga_equipment.jpg"
+      "image": "https://images.everydayhealth.com/images/healthy-living/fitness/guide-to-yoga-props-00-722x406.tmb-0.jpg?sfvrsn=b2a5debe_1"
     },
     {
       "id": 27,
@@ -294,7 +294,7 @@ const Product =[
       "ratings": 4.6,
       "price": 15,
       "type": "featured",
-      "image": "french_pastries.jpg"
+      "image": "https://media.istockphoto.com/id/497959594/photo/fresh-cakes.jpg?s=612x612&w=0&k=20&c=T1vp7QPbg6BY3GE-qwg-i_SqVpstyHBMIwnGakdTTek="
     },
     {
       "id": 28,
@@ -305,7 +305,7 @@ const Product =[
       "ratings": 4.6,
       "price": 70,
       "type": "new",
-      "image": "italian_trattoria.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyrf03r2z27YcHSYguNgXmgKV5dSDjGsijw&s"
     },
     {
       "id": 29,
@@ -316,7 +316,7 @@ const Product =[
       "ratings": 4.9,
       "price": 120000,
       "type": "sold",
-      "image": "sports_car.jpg"
+      "image": "https://cdni.autocarindia.com/utils/ImageResizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Grand-i10-Nios-200120231541.jpg"
     },
     {
       "id": 30,
@@ -327,7 +327,7 @@ const Product =[
       "ratings": 4.8,
       "price": 1500,
       "type": "new",
-      "image": "gaming_laptop.jpg"
+      "image": "https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg"
     },
     {
       "id": 31,
@@ -338,7 +338,7 @@ const Product =[
       "ratings": 4.9,
       "price": 600,
       "type": "featured",
-      "image": "web_dev_masterclass.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIfIeQegr--KT2kc22zTpG6yynJW_YiaT1DA&s"
     },
     {
       "id": 32,
@@ -349,7 +349,7 @@ const Product =[
       "ratings": 4.7,
       "price": 80,
       "type": "new",
-      "image": "imported_cheese.jpg"
+      "image": "https://i0.wp.com/www.lovelocal.in/blog/wp-content/uploads/2024/06/Grocery-Restock-WA.jpg?fit=640%2C640&ssl=1"
     },
     {
       "id": 33,
@@ -360,7 +360,7 @@ const Product =[
       "ratings": 4.5,
       "price": 60,
       "type": "sold",
-      "image": "workout_supplements.jpg"
+      "image": "https://media.istockphoto.com/id/636191848/photo/dumbbell-and-yoga-mat-on-wood-table.jpg?s=612x612&w=0&k=20&c=SELP8KSRmx2noiRcze_5FAgtR_RlZil84Q4Xo8s9c0Y="
     },
     {
       "id": 34,
@@ -371,7 +371,7 @@ const Product =[
       "ratings": 4.8,
       "price": 200000,
       "type": "featured",
-      "image": "modern_apartment.jpg"
+      "image": "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.jpg?s=612x612&w=0&k=20&c=vgQesOXDRzz0UfOZxmUtE-rFe75YgA9GvkKS8eeeumE="
     },
     {
       "id": 35,
@@ -382,7 +382,7 @@ const Product =[
       "ratings": 4.7,
       "price": 90,
       "type": "new",
-      "image": "steakhouse.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawkOEYbpqXEwuK-T5CjqawEiWFwzVnM1HOw&s"
     },
     {
       "id": 36,
@@ -393,7 +393,7 @@ const Product =[
       "ratings": 4.9,
       "price": 500,
       "type": "sold",
-      "image": "home_automation.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTRUXwN5Kdra8mycVmeGXrohno38vgwjtVA&s"
     },
     {
       "id": 37,
@@ -404,7 +404,7 @@ const Product =[
       "ratings": 4.6,
       "price": 10,
       "type": "featured",
-      "image": "artisan_bread.jpg"
+      "image": "https://c8.alamy.com/comp/HWJC85/bread-in-a-dutch-supermarket-HWJC85.jpg"
     },
     {
       "id": 38,
@@ -415,7 +415,7 @@ const Product =[
       "ratings": 4.9,
       "price": 200,
       "type": "new",
-      "image": "italian_cuisine_course.jpg"
+      "image": "https://www.success.com/wp-content/uploads/legacy/sites/default/files/main/blogposts/cookgrowshare_3.jpg"
     },
     {
       "id": 39,
@@ -426,7 +426,7 @@ const Product =[
       "ratings": 4.8,
       "price": 3000,
       "type": "sold",
-      "image": "wellness_retreat.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiegDLCfkmkgok6KhBsltME3aIbOWlMUNW0w&s"
     },
     {
       "id": 40,
@@ -437,7 +437,7 @@ const Product =[
       "ratings": 4.7,
       "price": 60,
       "type": "new",
-      "image": "brazilian_bbq.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3CYAVTn5PuJcp-lQp0fRoNiMrbT189aEyw&s"
     },
     {
       "id": 41,
@@ -448,7 +448,7 @@ const Product =[
       "ratings": 4.9,
       "price": 75000,
       "type": "featured",
-      "image": "luxury_convertible.jpg"
+      "image": "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx"
     },
     {
       "id": 42,
@@ -459,7 +459,7 @@ const Product =[
       "ratings": 4.5,
       "price": 80,
       "type": "new",
-      "image": "vegan_meal_prep.jpg"
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2023/01/Ponzu-tofu-poke-bowl-8733c67.jpg?quality=90&resize=440,400"
     },
     {
       "id": 43,
@@ -470,7 +470,7 @@ const Product =[
       "ratings": 4.7,
       "price": 350000,
       "type": "sold",
-      "image": "charming_cottage.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3oT_3JMH5ZUQphyQ4hD6pULb-SkwFHcx1gg&s"
     },
     {
       "id": 44,
@@ -481,7 +481,7 @@ const Product =[
       "ratings": 4.8,
       "price": 400,
       "type": "featured",
-      "image": "home_security.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6e1Qs-xILEltTNQLoSDbRpyYuzApCfK8SA&s"
     },
     {
       "id": 45,
@@ -492,7 +492,7 @@ const Product =[
       "ratings": 4.6,
       "price": 120,
       "type": "new",
-      "image": "fitness_coaching.jpg"
+      "image": "https://www.nextinsurance.com/wp-content/uploads/2020/04/April_2020_5-802x454.jpg"
     },
     {
       "id": 46,
@@ -503,7 +503,7 @@ const Product =[
       "ratings": 4.9,
       "price": 100,
       "type": "sold",
-      "image": "seafood_delivery.jpg"
+      "image": "https://media.istockphoto.com/id/1156027693/photo/fresh-salmon-steak-with-a-variety-of-seafood-and-herbs.jpg?s=612x612&w=0&k=20&c=FnY31V37yG5Ip4ejRttubUHBS8PPTaZfHHukDsEDjc0="
     },
     {
       "id": 47,
@@ -514,7 +514,7 @@ const Product =[
       "ratings": 4.7,
       "price": 120,
       "type": "new",
-      "image": "french_restaurant.jpg"
+      "image": "https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2023/10/beacon_restaurants-2.jpg"
     },
     {
       "id": 48,
@@ -525,7 +525,7 @@ const Product =[
       "ratings": 4.8,
       "price": 15,
       "type": "sold",
-      "image": "authentic_gelato.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuE1lV5Z-gcO-JwBAOR_MTJc4rtxifht7NBw&s"
     },
     {
       "id": 49,
@@ -536,7 +536,7 @@ const Product =[
       "ratings": 4.9,
       "price": 400,
       "type": "featured",
-      "image": "japanese_lessons.jpg"
+      "image": "https://thumbs.dreamstime.com/b/kid-creativity-education-concept-child-learning-art-mathematics-formula-school-boy-ideas-black-chalk-board-57852601.jpg"
     },
     {
       "id": 50,
@@ -547,7 +547,7 @@ const Product =[
       "ratings": 4.7,
       "price": 300000,
       "type": "new",
-      "image": "beachfront_condo.jpg"
+      "image": "https://robbreport.com/wp-content/uploads/2018/11/8-1_56_58-n-la-senda-dr.jpg"
     }
   ]
   
