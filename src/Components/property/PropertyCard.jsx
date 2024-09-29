@@ -5,10 +5,13 @@ import { ImCross } from "react-icons/im";
 import { IoGrid } from "react-icons/io5";
 import PropertyData from '../../PropertyData';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { details } from '../../slices/ProductSlice';
 export const PropertyCard = () => {
   // ======= react variables =================================
   const [isResidential, setIsResidential]  = useState(false)
   const navigate = useNavigate()
+  const dispatch =useDispatch()
 
   // ======== get data from API =================
   const [data , setData] =useState(PropertyData)
@@ -20,10 +23,16 @@ export const PropertyCard = () => {
       setData(filterData)
       console.log(allData)
   }
-  // ========== function
+  // ========== navigate to commercial
   const handleNavigate =()=>{
     navigate('/commercial')
   }
+  // ========== navigate to details
+  const handleDetail =(items)=>{
+    navigate('/propertyDetails')
+    dispatch(details(items))
+  }
+  console.log(handleDetail)
 
   return (
     <> 
@@ -109,7 +118,7 @@ export const PropertyCard = () => {
             <span className='text-[13px]'>{item.square_fit} sqft </span>
           </div>
         </div>
-        <button className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>
+        <button onClick={()=>handleDetail(data)} className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>
       </div>
     </div>
             ))
