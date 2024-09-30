@@ -1,19 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const ProductSlice = createSlice({
-  name: 'products',
+export const PropertySlice = createSlice({
+  name: 'counterProperty',
   initialState: {
-    productDetail: 0,
+    value: JSON.parse(localStorage.getItem('propertyDetailsData'))? JSON.parse(localStorage.getItem('propertyDetailsData')): null,
   },
   reducers: {
-    
-    details: (state, action) => {
-      state.productDetail = action.payload
-    },    
+    productData: (state, action) => {
+      state.value = action.payload
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { details } = ProductSlice.actions
+export const { productData } = PropertySlice.actions
 
-export default ProductSlice
+export default PropertySlice.reducer

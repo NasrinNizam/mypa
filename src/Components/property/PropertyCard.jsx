@@ -6,7 +6,7 @@ import { IoGrid } from "react-icons/io5";
 import PropertyData from '../../PropertyData';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { details } from '../../slices/ProductSlice';
+import { productData } from '../../slices/ProductSlice';
 export const PropertyCard = () => {
   // ======= react variables =================================
   const [isResidential, setIsResidential]  = useState(false)
@@ -30,9 +30,10 @@ export const PropertyCard = () => {
   // ========== navigate to details
   const handleDetail =(items)=>{
     navigate('/propertyDetails')
-    dispatch(details(items))
+    dispatch(productData(items))
+    localStorage.setItem('propertyDetailsData', JSON.stringify(items))
   }
-  console.log(handleDetail)
+  // console.log(handleDetail)
 
   return (
     <> 
@@ -59,10 +60,12 @@ export const PropertyCard = () => {
       <div className="flex justify-start items-center gap-10 bg-[#C8F0E2] p-5 ">
         <button onClick={()=> setData(PropertyData)} className='text-md font-roboto font-medium'>All</button>
         <button onClick={()=>handleData('apartment')} className='text-md font-roboto font-medium'>Apartment</button>
-        <button onClick={()=>handleData('duplex')} className='text-md font-roboto font-medium'>Duplex</button>
-        <button onClick={()=>handleData('building')} className='text-md font-roboto font-medium'>Building</button>
+        <button onClick={()=>handleData('villa')} className='text-md font-roboto font-medium'>Villa</button>
+        <button onClick={()=>handleData('house')} className='text-md font-roboto font-medium'>House</button>
         <button onClick={()=>handleData('penthouse')} className='text-md font-roboto font-medium'>Penthouse</button>
-        <button onClick={()=>handleData('luxury')} className='text-md font-roboto font-medium'>Luxury</button>
+        <button onClick={()=>handleData('condo')} className='text-md font-roboto font-medium'>Condo</button>
+        <button onClick={()=>handleData('cottage')} className='text-md font-roboto font-medium'>Cottage</button>
+        <button onClick={()=>handleData('loft')} className='text-md font-roboto font-medium'>Loft</button>
       </div>
       <div className="flex justify-center items-center gap-10 flex-wrap">
           {
@@ -72,7 +75,7 @@ export const PropertyCard = () => {
       <div className="relative">
         <img
           className="w-full h-56 object-cover"
-          src={item.image}
+          src={item.imageTwo}
           alt="Property"
           />
         {/* Badges */}
@@ -90,12 +93,12 @@ export const PropertyCard = () => {
       {/* Property Details */}
       <div className="px-3 py-4">
         {/* Title */}
-        <h2 className="font-bold text-md mb-1">{item.description} </h2>
+        <h2 className="font-bold w-[350px] sm:w-[250px] text-md mb-1">{item.description} </h2>
 
         {/* Price */}
         <div className="flex justify-between items-center">
           <span className=" flex items-center gap-1 text-green-600 text-xs font-bold px-2 py-1 rounded-full"><IoGrid /> {item.type}</span>
-          <span className="font-bold text-xl">{item.rent_per_month}$ </span>
+          <span className="font-bold text-xl">{item.price}$ </span>
         </div>
       </div>
 
@@ -118,7 +121,7 @@ export const PropertyCard = () => {
             <span className='text-[13px]'>{item.square_fit} sqft </span>
           </div>
         </div>
-        <button onClick={()=>handleDetail(data)} className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>
+        <button onClick={()=>handleDetail(item)} className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>
       </div>
     </div>
             ))
