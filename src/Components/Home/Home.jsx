@@ -16,42 +16,70 @@ import { LocationImage } from './homeCompo/LocationImage';
 export const Home = () => {
 
   // ========== slider variables
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  // };
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 4, // Default for large screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1280, // xl
+        settings: { slidesToShow: 3 }
+      },
+      {
+        breakpoint: 1024, // lg
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 768, // md
+        settings: { slidesToShow: 1 }
+      },
+      {
+        breakpoint: 480, // sm
+        settings: { slidesToShow: 1 }
+      }
+    ]
   };
+
 
  
   return (
     <>
-    <section className="relative w-full min-h-[100vh]">
+    <section className="relative w-full min-h-[100vh] overflow-x-hidden">
       {/* ===== water mark ====== */}
-        <div className="one ">
+        <div className="one hidden md:block ">
           <img src="images/Group58.svg" alt="watermark" />
         </div>
-        <div className=" two ">
+        <div className=" two hidden md:block ">
           <img className="" src="images/Group26.svg" alt="watermark" />
         </div>
-        <div className=" three ">
+        <div className=" three hidden md:block ">
           <img className="" src="images/Group26.svg" alt="watermark" />
         </div>
       {/* ===== banner part start ======= */}
       <div className="container">
         <div className="w-full h-full flex flex-col items-center justify-center ">
           {/* ===== buttons part ========== */}
-          <div className="flex items-center gap-10 mt-[100px] ">
+          <div className="flex flex-col md:flex-row items-center gap-5 mt-[100px] ">
             <ButtonOne icon={<img src='images/online-advertising.png' />} text='15,80,859 Active Ads' bg='bg-[#FDF5DE]' />
             <ButtonOne icon={<img src='images/affiliate-marketing.png' />} text='89,10,902 Active Users' bg='bg-[#E3F7F0]' />
           </div>
           {/* ====== Introduction part ========= */}
           <div className="text-center ">
-            <h1 className="text-[56px] mt-[30px] mb-6 font-bold font-roboto text-black leading-[74px] ">World Classified Web is <span className="text-[#F6B400]">MyPA</span> </h1>
-            <p className="text-[20px] w-[766px] font-normal font-roboto leading-6 ">Mypa 7 in 1 Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.</p>
+            <h1 className="md:text-[56px] text-[25px] mt-[30px] md:mb-6 mb-3 font-bold font-roboto text-black leading-[74px] ">World Classified Web is <span className="text-[#F6B400]">MyPA</span> </h1>
+            <p className="md:text-[20px] text-[14px] md:w-[766px] font-normal font-roboto leading-6 ">Mypa 7 in 1 Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.</p>
           </div>
           {/* ======== search part ====== */}
           <div className="px-5 py-[19px] bg-[#C8F0E2] rounded-[10px] mt-[36px] mb-[81px] flex gap-0 items-center ">
@@ -85,7 +113,7 @@ export const Home = () => {
             <div className="mb-[119px]">
               <CommonHeading title='Top Locations' icon={<IoLocationOutline size='30px' />} />
             </div>
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5">
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/building.jpg" alt="building" />} flag={ <img src='images/usa.png' alt='flag' />} place='United State' far='950m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingTwo.jpg" alt="building" />} flag={ <img src='images/bangladesh.png' alt='flag' />} place='Bangladesh' far='953m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingThree.jpg" alt="building" />} flag={ <img src='images/nigeria.png' alt='flag' />} place='Nigeria' far='950m' />
@@ -97,8 +125,6 @@ export const Home = () => {
         </div>
       </div>
     </section>
-    {/* ========= footer part ======= */}
-    {/* <Footer /> */}
     </>
   )
 }

@@ -16,16 +16,24 @@ import { useSelector } from 'react-redux';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
+
 export const PropertyDetails = () => {
   // ========== get data from redux =================
   const dataSlice = useSelector((state) => state.counterProperty.value);
   console.log(dataSlice)
-
+  // ============ react variables =================
   const [isExpanded, setIsExpanded] = useState(false);
-
+  const [backHome , setBackHome] = useState();
+  const navigate = useNavigate();
+// ============== functions =================
   const toggleText = () => {
     setIsExpanded(!isExpanded);
   };
+  const handleBackHome = () => {
+    navigate('/blog')
+   };
   // ============== slider ===============
   var settings = {
     dots: true,
@@ -38,7 +46,10 @@ export const PropertyDetails = () => {
   };
   return (
     <>
-       <section className="container mb-6">
+       <section className="container mb-6 mt-10">
+        <div onClick={handleBackHome} className="mb-5">
+          <FaArrowLeft />
+        </div>
        <Slider {...settings}>
       <div className='w-[300px] h-[300px] '>
         <img className='w-full h-full' src={dataSlice.imageOne} alt="" />

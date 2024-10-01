@@ -95,7 +95,7 @@ export const Navbar = () => {
             <li><NavLink to="/blog" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Property</NavLink></li>
             <li><NavLink to="/contact" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Contact</NavLink></li>
             <li><NavLink to="/login" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Login</NavLink></li>
-            <li><Link to="#" className="px-5 py-3 bg-[#00CB84] rounded-lg text-[18px] font-roboto font-normal text-white">Post Free Ads</Link></li>
+            <li><NavLink to="/registration" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Vendor Register</NavLink></li>
           </ul>
         </div>
       )}

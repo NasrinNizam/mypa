@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBed, FaBath, FaRulerCombined, FaRegHeart, FaCheck  } from 'react-icons/fa';
 import { RiNewsLine } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
@@ -7,11 +7,14 @@ import PropertyData from '../../PropertyData';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productData } from '../../slices/ProductSlice';
+import { addWishData } from '../../slices/WishListSlice';
 export const PropertyCard = () => {
   // ======= react variables =================================
   const [isResidential, setIsResidential]  = useState(false)
+  const [favorite, setFavorite] = useState(true);
   const navigate = useNavigate()
   const dispatch =useDispatch()
+
 
   // ======== get data from API =================
   const [data , setData] =useState(PropertyData)
@@ -33,8 +36,18 @@ export const PropertyCard = () => {
     dispatch(productData(items))
     localStorage.setItem('propertyDetailsData', JSON.stringify(items))
   }
-  // console.log(handleDetail)
+  // ========== navigate to wishlist
+  const handleWishlist =(items)=>{
+    dispatch(addWishData(items))
+    navigate('/wish')
+    localStorage.setItem('wishListData', JSON.stringify(items));
+    setFavorite(! favorite)
+    console.log(items)
+  };
 
+
+
+  
   return (
     <> 
     <div className="container">
@@ -85,9 +98,10 @@ export const PropertyCard = () => {
           <span className={`bg-white border-[1px] ${item.permission?'border-green-400 border-[1px] ':'border-red-500 border-[1px] '} flex items-center gap-1 text-black text-xs font-bold px-2 py-1 rounded`}><span className={`p-[3px] ${item.permission?'bg-[#00CB84]':'bg-red-500'} rounded-full `}>{item.permission?<FaCheck  color='white' />:<ImCross   color='white' />} </span> Original Property Owner Etc.</span>
         </div>
         {/* Favorite Icon */}
-        <button className="absolute top-2 right-2 text-green-500 hover:text-green-700">
+        <button onClick={()=>handleWishlist(item)} className={` ${favorite? 'text-green-500 hover:text-green-700 bg-white' :'bg-green-500 text-white'} absolute top-2 right-2 w-[30px] h-[30px]  rounded-full flex justify-center items-center `}>
            <FaRegHeart />
         </button>
+        
       </div>
 
       {/* Property Details */}
