@@ -3,7 +3,7 @@ import React from 'react'
 export const SliderImage = ({bg , title , text , image}) => {
   return (
     <>
-    <div className={`px-[31px] py-[30px] ${bg} rounded-[10px] text-center mr-8 `}>
+    <div className={`px-[31px] py-[30px] ${bg} rounded-[10px] text-center mr-8 flex flex-col justify-center items-center `}>
         <div className=" w-[96px] h-[96px] mx-auto">
            {image}
         </div>

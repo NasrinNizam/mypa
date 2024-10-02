@@ -35,7 +35,7 @@ const ProductCard = () => {
         { data.map((item)=>(
           <div key={item.id} className="bg-white shadow-md rounded-lg w-80 border border-gray-200 overflow-hidden">
            {/* Image and Heart Icon */}
-           <div className="relative">
+           <di className="relative">
              <img
                src={item.image} // Replace with actual product image URL
                alt="Product"
@@ -55,10 +55,7 @@ const ProductCard = () => {
                <span className="ml-1">{item.views} <span className='text-[#00CB84] text-[14px] font-roboto '>views</span> </span>
              </div>
            </div>
-           </div>
-     
-           
-     
+           </di>
            {/* Content Section */}
            <div className="p-4 pt-0">
              {/* Title */}

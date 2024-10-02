@@ -40,7 +40,7 @@ const PricingPlan = () => {
           Ecommerce and Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.
         </p>
         {/* Toggle Switch for Billing Cycle */}
-        <div className="flex justify-center items-center gap-4 bg-[#FCECBE] w-[300px] p-[15px] rounded-lg text-center mx-auto ">
+        <div className="flex justify-center items-center gap-4 bg-[#FCECBE] md:w-[300px] p-[15px] rounded-lg text-center mx-auto ">
           <span className="text-black font-bold">Monthly</span>
           <div onClick={handleBillingCycleToggle} className={`relative w-14 h-8 bg-yellow-400 rounded-full cursor-pointer transition`}>
             <div className={`absolute w-6 h-6 bg-white rounded-full shadow-md top-1 transition-transform ${ billingCycle === 'yearly' ? 'translate-x-6' : 'translate-x-1'}`} ></div>

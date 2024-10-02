@@ -37,13 +37,31 @@ export const PropertyCard = () => {
     localStorage.setItem('propertyDetailsData', JSON.stringify(items))
   }
   // ========== navigate to wishlist
-  const handleWishlist =(items)=>{
-    dispatch(addWishData(items))
-    navigate('/wish')
-    localStorage.setItem('wishListData', JSON.stringify(items));
-    setFavorite(! favorite)
-    console.log(items)
+  // const handleWishlist =(items)=>{
+  //   let listData = JSON.parse(localStorage.getItem('listData')) || [];
+  //   listData.push(items)
+  //   dispatch(addWishData(items))
+  //   localStorage.setItem('listData', JSON.stringify(listData));
+  //   setFavorite(! favorite)
+  //   console.log(items)
+  // };
+
+  const handleWishlist = (items) => {
+    let listData = JSON.parse(localStorage.getItem('listData')) || [];
+  
+    // Check if the item already exists in the wishlist
+    const isItemInWishlist = listData.some(item => item.id === items.id);
+  
+    if (!isItemInWishlist) {
+      listData.push(items);
+      dispatch(addWishData(items));
+      localStorage.setItem('listData', JSON.stringify(listData));
+      setFavorite(!favorite);
+    }
+  
+    console.log(items);
   };
+  
 
 
 

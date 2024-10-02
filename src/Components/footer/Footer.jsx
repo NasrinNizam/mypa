@@ -6,22 +6,14 @@ import { FooterItems } from './FooterItems';
 export const Footer = () => {
   return (
     <section className="bg-[#C8F0E2] pt-[100px] pb-[28px] relative overflow-hidden">
-    {/* ========== watermark ====== */}
-    <div className="absolute top-1/2 left-0 w-[700px] z-[-1]">
-      <img src="images/Group58.svg" alt="watermark" />
-    </div>
-    <div className="absolute right-0 top-0 w-[300px] z-[-1] overflow-hidden">
-      <img className="" src="images/Group26.svg" alt="watermark" />
-    </div>
-  
-    {/* =========== footer part ========= */}
+          {/* =========== footer part ========= */}
     <div className="container">
-      <div className="flex flex-col md:flex-row items-start mb-[50px] space-y-6 md:space-y-0">
+      <div className="flex flex-col lg:flex-row mb-[50px] space-y-6 md:space-y-0 gap-5">
         <div className="md:w-1/3 mr-[56px] w-full">
-          <div className="flex  sm:flex-row items-center gap-[20px] sm:gap-[50px] mb-5">
+          <div className="flex flex-col md:flex-row items-start gap-[20px] sm:gap-[50px] mb-5">
             <Link
               to="#"
-              className="flex items-center gap-[3px] bg-[#FCECBE] rounded-[5px] p-2 w-full sm:w-auto"
+              className="flex items-center gap-[3px] bg-[#FCECBE] rounded-[5px] p-2 "
             >
               <div className="text-[36px] text-blue-500">
                 <FaAppStoreIos />
@@ -33,7 +25,7 @@ export const Footer = () => {
             </Link>
             <Link
               to="#"
-              className="flex items-center gap-[3px] bg-[#FCECBE] rounded-[5px] p-2 w-full sm:w-auto"
+              className="flex items-center gap-[3px] bg-[#FCECBE] rounded-[5px] p-2"
             >
               <div className="text-[36px] text-sky-400">
                 <FaGooglePlay />
@@ -44,13 +36,13 @@ export const Footer = () => {
               </div>
             </Link>
           </div>
-          <p className="text-[16px] font-roboto font-normal text-[#707070] mt-5">
+          <p className="text-[16px] w-[250px] md:w-[300px] font-roboto font-normal text-[#707070] mt-5">
             E-commerce and Classified marketplace in the world, Real Estate, Restaurant, Grocery, Pharmacy,
             Car Deals, Post Man and Ads.
           </p>
         </div>
-  
-        <div className="md:w-1/4 w-full">
+         <div className="flex justify-center flex-col md:flex-row items-center gap-10">
+         <div className="md:w-1/4 w-full">
           <FooterItems heading="More from mypa" one="Sell Fast" two="Staffing solutions" three="Ad Promotions" four="Membership" />
         </div>
         <div className="md:w-1/4 w-full">
@@ -59,6 +51,7 @@ export const Footer = () => {
         <div className="md:w-1/4 w-full">
           <FooterItems heading="About mypa" one="About Us" two="Careers" three="Terms and Conditions" four="Privacy policy" />
         </div>
+         </div>
       </div>
   
       {/* ============ icon part =========== */}
@@ -74,7 +67,7 @@ export const Footer = () => {
           <Link to="#"><img src="images/youtube.png" alt="YouTube" className="w-6 h-6" /></Link>
         </div>
   
-        <div className="flex flex-wrap justify-center items-center gap-5">
+        <div className="flex flex-wrap justify-center items-center w-[250px] md:w-[450px] gap-5">
           <Link to="#"><img className="w-full" src="images/paypal.png" alt="PayPal" /></Link>
           <Link to="#"><img className="w-full" src="images/visa.png" alt="Visa" /></Link>
           <Link to="#"><img className="w-full" src="images/credit-card.png" alt="Credit Card" /></Link>

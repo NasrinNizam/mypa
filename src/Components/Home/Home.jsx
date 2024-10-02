@@ -78,18 +78,18 @@ export const Home = () => {
           </div>
           {/* ====== Introduction part ========= */}
           <div className="text-center ">
-            <h1 className="md:text-[56px] text-[25px] mt-[30px] md:mb-6 mb-3 font-bold font-roboto text-black leading-[74px] ">World Classified Web is <span className="text-[#F6B400]">MyPA</span> </h1>
-            <p className="md:text-[20px] text-[14px] md:w-[766px] font-normal font-roboto leading-6 ">Mypa 7 in 1 Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.</p>
+            <h4 className="md:text-[56px] text-[20px] mt-[30px]  font-bold font-roboto text-black leading-[74px] ">World Classified Web is <span className="text-[#F6B400]">MyPA</span> </h4>
+            <p className="md:text-[20px] text-[14px] md:w-[766px] md:mt-6 mt-3 font-normal font-roboto leading-6 ">Mypa 7 in 1 Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.</p>
           </div>
           {/* ======== search part ====== */}
-          <div className="px-5 py-[19px] bg-[#C8F0E2] rounded-[10px] mt-[36px] mb-[81px] flex gap-0 items-center ">
+          <div className="md:px-5 md:py-[12px] bg-[#C8F0E2] rounded-[10px] mt-[36px] mb-[81px] flex gap-0 items-center ">
             <input className="py-[12px] px-5 " type="text" 
-            placeholder='search your preferable property'
+            placeholder='search property'
              />
             {/* ====== button part ========= */}
-            <button className="px-5 py-[12px] bg-[#00CB84] rounded-[10px] flex items-center gap-2 text-white "> 
+            <button className="px-5 py-[14px] bg-[#00CB84] md:rounded-[10px] flex items-center gap-2 text-white "> 
               <div className=''><FaSearch /></div>
-              <p className="text-[18px] font-roboto font-bold ">Search Ads</p>
+              <p className="text-[18px] font-roboto font-bold hidden md:block ">Search Ads</p>
             </button>
           </div>
           {/* ========== slider part========= */}
@@ -113,7 +113,7 @@ export const Home = () => {
             <div className="mb-[119px]">
               <CommonHeading title='Top Locations' icon={<IoLocationOutline size='30px' />} />
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-5">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 ">
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/building.jpg" alt="building" />} flag={ <img src='images/usa.png' alt='flag' />} place='United State' far='950m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingTwo.jpg" alt="building" />} flag={ <img src='images/bangladesh.png' alt='flag' />} place='Bangladesh' far='953m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingThree.jpg" alt="building" />} flag={ <img src='images/nigeria.png' alt='flag' />} place='Nigeria' far='950m' />

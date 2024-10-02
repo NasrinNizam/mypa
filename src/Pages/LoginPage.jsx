@@ -94,10 +94,10 @@ export const LoginPage = () => {
     <>
        <div className="relative min-h-screen flex items-start mt-[80px] justify-center">
         {/* ===== water mark ====== */}
-        <div className="absolute top-[-200px] left-0 w-[700px] z-[-1] ">
+        <div className="absolute top-[-200px] left-0 lg:w-[700px] z-[-1] ">
           <img src="images/Group58.svg" alt="watermark" />
         </div>
-        <div className="absolute top-24 right-0 w-[600px] z-[-1] overflow-hidden ">
+        <div className="absolute top-24 right-0 lg:w-[600px] z-[-1] overflow-hidden ">
           <img className="" src="images/Group26.svg" alt="watermark" />
         </div>
          <div className="flex flex-col">
@@ -118,7 +118,7 @@ export const LoginPage = () => {
               Registration
             </button>
           </div>
-          <div className="w-[500px] max-w-lg bg-[#C8F0E2] mb-6 rounded-[0 0 10px 10px] shadow-lg p-8">
+          <div className="lg:w-[500px] md:w-[400px] w-[300px] max-w-lg bg-[#C8F0E2] mb-6 rounded-[0 0 10px 10px] shadow-lg md:p-8 p-4">
             {/* ========= main form ====== */}
             <form onSubmit={handleSubmit} className="mt-6 ">
               {/*====== email =========== */}
