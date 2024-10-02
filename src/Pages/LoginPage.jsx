@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaFacebookF ,FaGoogle  } from "react-icons/fa";
 import { FaXTwitter, FaUnlock , FaLock  } from "react-icons/fa6";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, reload, signInWithEmailAndPassword } from "firebase/auth";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from 'react-redux';
@@ -84,7 +84,7 @@ export const LoginPage = () => {
                   // ======= dispatch data part
                   dispatch(userData(user))
                   // ===== navigate to dashboard
-                navigate('/profilePage')
+                navigate('/layoutTwo/profilePage')
                 // ========= realtime database
                 set(ref(db, 'User/' + user.uid ), {
                   userName: user.displayName,

@@ -77,9 +77,9 @@ export const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-[30px]">
-            <div className="w-[40px] h-[40px] bg-[#C8F0E2] rounded-[5px] flex justify-center items-center">
+            {/* <div className="w-[40px] h-[40px] bg-[#C8F0E2] rounded-[5px] flex justify-center items-center">
               <img src="images/Massage.png" alt="icon" />
-            </div>
+            </div> */}
             <Link to="#" className="px-5 py-3 bg-[#00CB84] rounded-lg text-[18px] font-roboto font-normal text-white">Post Free Ads</Link>
           </div>
         </div>

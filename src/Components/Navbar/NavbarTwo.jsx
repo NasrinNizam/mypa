@@ -74,36 +74,36 @@ export const NavbarTwo = () => {
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex gap-8">
               <Link
-                to="/"
+                to="/layoutTwo/home"
                 className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
               >
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/layoutTwo/about"
                 className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
               >
                 About
               </Link>
               <Link
-                to="/service"
+                to="/layoutTwo/service"
                 className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
               >
                 Services
               </Link>
               <Link
-                to="/blog"
+                to="/layoutTwo/blog"
                 className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
               >
                 Property
               </Link>
               <Link
-                to="/contact"
+                to="/layoutTwo/contact"
                 className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">Contact</Link>
             </div>
             <div className="div">
             <Link
-                to="/profilePage"
+                to="/layoutTwo/profilePage"
                 className="text-[18px] flex flex-col items-center justify-center font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">
                   <div className="w-[30px] h-[30px] mb-1 ">
                     <img className='w-full h-full rounded-full' src={userSlice.photoURL} alt="" />
@@ -117,47 +117,47 @@ export const NavbarTwo = () => {
               <div className="md:hidden absolute top-[100px] left-0 w-full bg-white shadow-md z-50">
                 <div className="flex flex-col items-start gap-5 p-5">
                   <Link
-                    to="/"
+                    to="/layoutTwo/home"
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Home
                   </Link>
                   <Link
-                    to="/about"
+                    to="/layoutTwo/about"
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     About
                   </Link>
                   <Link
-                    to="/service"
+                    to="/layoutTwo/service"
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Services
                   </Link>
                   <Link
-                    to="/blog"
+                    to="/layoutTwo/blog"
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Property
                   </Link>
                   <Link
-                    to="/contact"
+                    to="/layoutTwo/contact"
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Contact
                   </Link>
                   <Link
-                to="/profilePage"
-                className="text-[18px] flex flex-col items-center justify-center font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">
+                   to="/layoutTwo/profilePage"
+                   className="text-[18px] flex flex-col items-center justify-center font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">
                   <div className="w-[30px] h-[30px] mb-1 ">
-                    <img className='w-full h-full rounded-full' src={userSlice.photoURL} alt="" />
+                    <img className='w-full h-full rounded-full' src={userSlice.photoURL} alt="img" />
                   </div>
-                    <p>{userSlice.displayName} </p>
+                    {/* <p>{userSlice.displayName} </p> */}
               </Link>
                 </div>
               </div>

@@ -20,7 +20,7 @@ export const Dashboard = () => {
     // remove(ref(db, 'User/' + data.uid))
     const auth = getAuth();
     signOut(auth).then(() => {
-       navigate('/login')
+       navigate('/')
      })
        .catch((error) => {
      });
