@@ -16,7 +16,7 @@ export const LayoutOne = () => {
   useEffect(()=>{
       setCounterTwo(counter)
       if(userSliceData == null){
-        navigate('/login')
+        navigate('/')
       }
     }, [])
  

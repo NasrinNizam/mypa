@@ -33,7 +33,6 @@ function App() {
           <Route path='/commer' element={<Commercial />}/>
           <Route path='/wish' element={<WishPage />}/>
           <Route path='/profilePage' element={<ProfilePage/>}/>
-
         </Route>
         <Route path='/propertyDetails' element={<PropertyDetails />}/>
         <Route path='*' element={<NotFound/>}/>
