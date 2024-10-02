@@ -16,7 +16,7 @@ const WishListCompo = () => {
         <h1 className="text-4xl font-bold font-roboto mt-[100px] mb-[22px] text-center text-gray-800">
           My <span className='text-[#F6B400] '>Wishlist</span>
         </h1>
-        <p className='font-roboto text-[20px] text-center mb-[80px] '>Short Description for Wishlist</p>
+        <p className='font-roboto text-[20px] text-center mb-[80px] '>Here is the favorite properties</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
            {
             wishSlice.map((item)=>(
