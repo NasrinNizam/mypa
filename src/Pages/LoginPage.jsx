@@ -7,6 +7,8 @@ import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from 'react-redux';
 import { userData } from '../slices/UserSlice';
+import { getDatabase, ref, set } from "firebase/database";
+
 export const LoginPage = () => {
     const [email , setEmail]                             = useState()
     const [passwordError , setPasswordError]             = useState('')
@@ -16,8 +18,9 @@ export const LoginPage = () => {
     const [isLogin, setIsLogin]                          = useState(true)
     const navigate = useNavigate()
     const dispatch = useDispatch()
-    // ========== firebase variables
+    // ========= firebase variables ==========
     const auth = getAuth();
+    const db = getDatabase();
 
     // ======== functions
     const handleShow =()=>{
@@ -81,7 +84,13 @@ export const LoginPage = () => {
                   // ======= dispatch data part
                   dispatch(userData(user))
                   // ===== navigate to dashboard
-                navigate('/layoutTwo/profilePage')
+                navigate('/profilePage')
+                // ========= realtime database
+                set(ref(db, 'User/' + user.uid ), {
+                  userName: user.displayName,
+                  userPhoto: user.photoURL,
+                  uid: user.uid,
+                });
               }
             })
             .catch((error) => {

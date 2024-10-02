@@ -12,19 +12,11 @@ import { CommonHeading } from './homeCompo/CommonHeading';
 import { IoLocationOutline } from "react-icons/io5";
 import { PiHandHeartFill  } from "react-icons/pi";
 import { LocationImage } from './homeCompo/LocationImage';
+import { Featured } from './Featured';
 
 export const Home = () => {
 
   // ========== slider variables
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  // };
   const settings = {
     dots: true,
     infinite: true,
@@ -59,13 +51,13 @@ export const Home = () => {
     <>
     <section className="relative w-full min-h-[100vh] overflow-x-hidden">
       {/* ===== water mark ====== */}
-        <div className="one hidden md:block ">
+        <div className="one ">
           <img src="images/Group58.svg" alt="watermark" />
         </div>
-        <div className=" two hidden md:block ">
+        <div className=" two ">
           <img className="" src="images/Group26.svg" alt="watermark" />
         </div>
-        <div className=" three hidden md:block ">
+        <div className=" three ">
           <img className="" src="images/Group26.svg" alt="watermark" />
         </div>
       {/* ===== banner part start ======= */}
@@ -104,16 +96,20 @@ export const Home = () => {
              </Slider>
            </div>
           {/* ========= advertising ========= */}
-          <div className="mb-[119px]">
+          <div className="mg:mb-[100px] mb-[50px]">
            <CommonHeading icon={<PiHandHeartFill   size='30px' />} title='Featured Advertising' detail='Ecommerce and Classified marketplace in the world, RealEstate, Restaurant, Grocery, Pharmacy, Car Deals, Post Man and Ads.' />
           </div>
-          <Advertise />
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mb-[80px]">
+            <Featured Ratings="4" type='Featured' country='Germany' brief='Kids car.' price='500' category='Cars' views='15k' image={<img src="/images/car.png" alt="image" /> } />
+            <Featured Ratings="4" type='Featured' country='Germany' brief='Natural Grocery items for your daily use.' price='50' category='Grocery' views='13k' image={<img src="/images/grocery.png" alt="image" /> } />
+            <Featured Ratings="4" type='Featured' country='Germany' brief='Luxury restaurant with healthy food.' price='70' category='Restaurant' views='150k' image={<img src="/images/chicken.png" alt="image" /> } />
+            </div>
           {/* ====== top location ===== */}
-          <div className="mb-[119px]">
-            <div className="mb-[119px]">
+          <div className="mg:mb-[119px] mb-[60px]">
+            <div className="md:mb-[119px] mb-[50px]">
               <CommonHeading title='Top Locations' icon={<IoLocationOutline size='30px' />} />
             </div>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 ">
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/building.jpg" alt="building" />} flag={ <img src='images/usa.png' alt='flag' />} place='United State' far='950m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingTwo.jpg" alt="building" />} flag={ <img src='images/bangladesh.png' alt='flag' />} place='Bangladesh' far='953m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="images/buildingThree.jpg" alt="building" />} flag={ <img src='images/nigeria.png' alt='flag' />} place='Nigeria' far='950m' />

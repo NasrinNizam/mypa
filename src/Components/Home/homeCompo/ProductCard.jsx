@@ -20,7 +20,7 @@ const ProductCard = () => {
   return (
        <div className="container">
         <div className="mb-10">
-        <div className="bg-white border-[1px] border-[#C8F0E2] px-5 py-3 rounded-lg flex justify-start gap-8 items-center mb-10 w-full mt-5">
+        <div className="bg-white border-[1px] border-[#C8F0E2] px-5 py-3 rounded-lg flex-wrap flex justify-start gap-4 lg:gap-8 items-center mb-10 w-full mt-5">
           <button onClick={()=>setData(Product)} className='text-[16px] text-black font-roboto font-normal hover:text-[#00CB84] '>All</button>
           <button onClick={()=>handleData('electronics')} className='text-[16px] text-black font-roboto font-normal hover:text-[#00CB84] '>Electronics</button>
           <button onClick={()=>handleData('health')} className='text-[16px] text-black font-roboto font-normal hover:text-[#00CB84] '>Health</button>

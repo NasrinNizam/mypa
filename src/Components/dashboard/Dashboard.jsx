@@ -4,12 +4,30 @@ import { FaHome, FaStar, FaHeart, FaCogs, FaSignOutAlt } from 'react-icons/fa';
 import { LuBadgeDollarSign } from 'react-icons/lu';
 import { useSelector } from 'react-redux';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
+import { getDatabase, ref, set , remove} from "firebase/database";
+import { getAuth, signOut } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
+
 
 export const Dashboard = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
   const data = useSelector((state) => state.counter.value);
   console.log(data);
 
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // ==================== log out =================
+  const handleLogOut =()=>{
+    // remove(ref(db, 'User/' + data.uid))
+    const auth = getAuth();
+    signOut(auth).then(() => {
+       navigate('/login')
+     })
+       .catch((error) => {
+     });
+   
+  }
+
+
 
   return (
     <div className="flex h-screen bg-transparent">
@@ -87,10 +105,9 @@ export const Dashboard = () => {
               <FaCogs className="mr-3" /> Settings
             </Link>
 
-            <Link
-              to="/logout"
+            <Link to='#'
               className="flex items-center text-gray-600 hover:text-red-500 transition-colors duration-300"
-              onClick={() => setIsSidebarOpen(false)}
+              onClick={handleLogOut}
             >
               <FaSignOutAlt className="mr-3" /> Logout
             </Link>

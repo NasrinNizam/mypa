@@ -5,9 +5,11 @@ import { IoLogoAndroid } from 'react-icons/io';
 import { BsUiChecksGrid } from "react-icons/bs";
 
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export const NavbarTwo = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const userSlice = useSelector((state)=>state.counter.value)
 
   return (
     <nav className="bg-white">
@@ -97,9 +99,16 @@ export const NavbarTwo = () => {
               </Link>
               <Link
                 to="/contact"
-                className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
-              >
-                Contact
+                className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">Contact</Link>
+            </div>
+            <div className="div">
+            <Link
+                to="/profilePage"
+                className="text-[18px] flex flex-col items-center justify-center font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">
+                  <div className="w-[30px] h-[30px] mb-1 ">
+                    <img className='w-full h-full rounded-full' src={userSlice.photoURL} alt="" />
+                  </div>
+                    {/* <p className=' hidden lg:block'>{userSlice.displayName} </p> */}
               </Link>
             </div>
 
@@ -142,6 +151,14 @@ export const NavbarTwo = () => {
                   >
                     Contact
                   </Link>
+                  <Link
+                to="/profilePage"
+                className="text-[18px] flex flex-col items-center justify-center font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300">
+                  <div className="w-[30px] h-[30px] mb-1 ">
+                    <img className='w-full h-full rounded-full' src={userSlice.photoURL} alt="" />
+                  </div>
+                    <p>{userSlice.displayName} </p>
+              </Link>
                 </div>
               </div>
             )}

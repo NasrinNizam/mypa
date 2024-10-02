@@ -9,8 +9,8 @@ export const Footer = () => {
           {/* =========== footer part ========= */}
     <div className="container">
       <div className="flex flex-col lg:flex-row mb-[50px] space-y-6 md:space-y-0 gap-5">
-        <div className="md:w-1/3 mr-[56px] w-full">
-          <div className="flex flex-col md:flex-row items-start gap-[20px] sm:gap-[50px] mb-5">
+        <div className="md:w-[300px] flex flex-col gap-5 justify-center items-center w-full">
+          <div className="flex flex-row items-start gap-[20px] sm:gap-[50px] mb-5">
             <Link
               to="#"
               className="flex items-center gap-[3px] bg-[#FCECBE] rounded-[5px] p-2 "
@@ -36,12 +36,12 @@ export const Footer = () => {
               </div>
             </Link>
           </div>
-          <p className="text-[16px] w-[250px] md:w-[300px] font-roboto font-normal text-[#707070] mt-5">
+          <p className="text-[16px] text-center lg:text-left w-[250px] md:w-[300px] font-roboto font-normal text-[#707070] mt-5">
             E-commerce and Classified marketplace in the world, Real Estate, Restaurant, Grocery, Pharmacy,
             Car Deals, Post Man and Ads.
           </p>
         </div>
-         <div className="flex justify-center flex-col md:flex-row items-center gap-10">
+         <div className="flex justify-center mx-auto flex-col md:flex-row items-start gap-10 lg:gap-y-16">
          <div className="md:w-1/4 w-full">
           <FooterItems heading="More from mypa" one="Sell Fast" two="Staffing solutions" three="Ad Promotions" four="Membership" />
         </div>

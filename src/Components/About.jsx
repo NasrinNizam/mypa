@@ -103,7 +103,7 @@ export const About = () => {
             {/* History Image */}
             <div className="text-center">
               <img
-                src="https://via.placeholder.com/400x300"
+                src="/images/office-buildings.png"
                 alt="About My PA"
                 className="rounded-lg shadow-lg mx-auto"
               />

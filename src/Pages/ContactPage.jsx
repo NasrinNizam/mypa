@@ -1,10 +1,10 @@
 import React from 'react'
-import WishListCompo from '../Components/dashboard/WishListCompo'
+import Contact from '../Components/contacts/Contact'
 
 export const ContactPage = () => {
   return (
     <div>
-      <WishListCompo />
+      <Contact />
     </div>
   )
 }

@@ -7,7 +7,7 @@ import PropertyData from '../../PropertyData';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { productData } from '../../slices/ProductSlice';
-import { addWishData } from '../../slices/WishListSlice';
+import { addWishData, removeWishData } from '../../slices/WishListSlice';
 export const PropertyCard = () => {
   // ======= react variables =================================
   const [isResidential, setIsResidential]  = useState(false)
@@ -47,20 +47,38 @@ export const PropertyCard = () => {
   // };
 
   const handleWishlist = (items) => {
-    let listData = JSON.parse(localStorage.getItem('listData')) || [];
+    // Parse localStorage data or initialize as an empty array
+    let listData = JSON.parse(localStorage.getItem('wishListData')) || [];
+  
+    // Ensure listData is an array
+    if (!Array.isArray(listData)) {
+      listData = [];
+    }
   
     // Check if the item already exists in the wishlist
     const isItemInWishlist = listData.some(item => item.id === items.id);
   
-    if (!isItemInWishlist) {
+    if (isItemInWishlist) {
+      // Remove the item from the wishlist
+      listData = listData.filter(item => item.id !== items.id);
+      dispatch(removeWishData(items.id));
+    } else {
+      // Add the item to the wishlist
       listData.push(items);
       dispatch(addWishData(items));
-      localStorage.setItem('listData', JSON.stringify(listData));
-      setFavorite(!favorite);
     }
+  
+    // Update the localStorage
+    localStorage.setItem('wishListData', JSON.stringify(listData));
+    
+    setFavorite(!favorite); // This toggles your favorite state
   
     console.log(items);
   };
+  
+  
+  
+  
   
 
 
@@ -88,7 +106,7 @@ export const PropertyCard = () => {
               </button>
           </div>
       </div>
-      <div className="flex justify-start items-center gap-10 bg-[#C8F0E2] p-5 ">
+      <div className="flex justify-start flex-wrap items-center gap-4  md:gap-10  bg-[#C8F0E2] p-5 ">
         <button onClick={()=> setData(PropertyData)} className='text-md font-roboto font-medium'>All</button>
         <button onClick={()=>handleData('apartment')} className='text-md font-roboto font-medium'>Apartment</button>
         <button onClick={()=>handleData('villa')} className='text-md font-roboto font-medium'>Villa</button>

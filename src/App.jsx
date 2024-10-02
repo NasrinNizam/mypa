@@ -12,7 +12,6 @@ import Registration from './Pages/Registration'
 import { ProfilePage } from './Pages/ProfilePage'
 import { LoginPage } from './Pages/LoginPage'
 import { ToastContainer } from 'react-toastify'
-import { LayoutTwo } from './Layouts/LayoutTwo'
 import { PropertyCard } from './Components/property/PropertyCard'
 import { Commercial } from './Components/property/Commercial'
 import { PropertyDetails } from './Components/property/PropertyDetails'
@@ -33,11 +32,10 @@ function App() {
           <Route path='/commercial' element={<Commercial />}/>
           <Route path='/commer' element={<Commercial />}/>
           <Route path='/wish' element={<WishPage />}/>
+          <Route path='/profilePage' element={<ProfilePage/>}/>
+
         </Route>
         <Route path='/propertyDetails' element={<PropertyDetails />}/>
-        <Route path='/layoutTwo' element={<LayoutTwo/>}>
-          <Route path='/layoutTwo/profilePage' element={<ProfilePage/>}/>
-        </Route>
         <Route path='*' element={<NotFound/>}/>
       </Route>
     )
