@@ -142,7 +142,7 @@ export const NavbarTwo = () => {
                     className="text-[18px] font-roboto leading-4 font-normal text-[#000001] hover:text-[#00CB84] transition-colors duration-300"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Blog
+                    Property
                   </Link>
                   <Link
                     to="/contact"
