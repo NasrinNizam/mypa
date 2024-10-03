@@ -115,7 +115,7 @@ export const Home = () => {
               <LocationImage image={<img className="w-full h-full rounded-lg " src="/images/buildingThree.jpg" alt="building" />} flag={ <img src='/images/nigeria.png' alt='flag' />} place='Nigeria' far='950m' />
               <LocationImage image={<img className="w-full h-full rounded-lg " src="/images/buildingFour.jpg" alt="building" />} flag={ <img src='/images/canada.png' alt='flag' />} place='Canada' far='520m' />
             </div>
-          </div>/
+          </div>
           {/* ====== pricing plan ===== */}
           <PricingPlan />
         </div>
