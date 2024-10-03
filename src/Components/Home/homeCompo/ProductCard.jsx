@@ -4,9 +4,16 @@ import { HiOutlineEye } from 'react-icons/hi';
 import Product from '../../../ProductData';
 import { CiGrid41 } from "react-icons/ci";
 import { TiLocationOutline } from "react-icons/ti";
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 
 const ProductCard = () => {
+  // ====== react variables =================================
+  const navigate = useNavigate()
+  // ====== get data from redux
+  const userSlice = useSelector((state)=>state.counter.value)
+  //  get data from API =================
   const [data , setData] =useState(Product)
   const handleData =(allData)=>{
       const filterData = Product.filter((filterProducts)=>{
@@ -15,6 +22,13 @@ const ProductCard = () => {
       })
       setData(filterData)
       console.log(allData)
+  }
+  const handleMassage=()=>{
+    if(userSlice == null){
+      navigate('/contact')
+    }else{
+      navigate('/layoutTwo/contact')
+    }
   }
 
   return (
@@ -41,9 +55,9 @@ const ProductCard = () => {
                alt="Product"
                className="w-full h-48 object-cover"
                />
-             <button className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100">
+             {/* <button className="absolute top-2 right-2 bg-white p-2 rounded-full shadow-lg hover:bg-gray-100">
                <FaHeart className="text-green-500" />
-             </button>
+             </button> */}
              {/* Country and Views Section */}
            <div className=" absolute bottom-2 left-1/2 translate-x-[-50%] flex justify-between items-center text-sm text-black bg-white border-[1px] border-[#C8F0E2] rounded-[5px] p-2 w-[90%] ">
              <div className="flex items-center space-x-1">
@@ -82,8 +96,8 @@ const ProductCard = () => {
                <div className="text-xl font-bold text-gray-800">${item.price}</div>
                <div className="flex items-center gap-2">
                  <div className="flex items-center space-x-2">
-                   <FaPhoneAlt className="text-red-300" />
-                   <FaEnvelope className="text-red-300" />
+                   <div onClick={handleMassage} className="div"><FaPhoneAlt className="text-red-300" /></div>
+                   <div onClick={handleMassage} className="div"><FaEnvelope className="text-red-300" /></div>
                  </div>
                  <div className='border-[1px] border-[#00CB84] bg-[#C8F0E2] font-roboto font-bold text-xs px-2 py-1 rounded'> {item.type}</div>
                </div>

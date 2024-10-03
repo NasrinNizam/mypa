@@ -100,7 +100,7 @@ export const Commercial = () => {
               <p className="text-gray-600 h-[70px]">{item.description} </p>
       
               {/* Contact Button */}
-              <button className="w-full bg-[#CA8A04] text-white py-3 px-4 rounded-lg shadow-md text-sm font-semibold hover:from-blue-600 hover:to-indigo-700">
+              <button onClick={handleContact} className="w-full bg-[#CA8A04] text-white py-3 px-4 rounded-lg shadow-md text-sm font-semibold hover:from-blue-600 hover:to-indigo-700">
                 Contact Us
               </button>
             </div>
