@@ -22,11 +22,11 @@ export const Commercial = () => {
    }
    // ========== function
    const handleNavigate =()=>{
-     navigate('/residential')
-    // if(userSlice == null){
-    // }else{
-    //   navigate('/layoutTwo/residential')
-    // }
+     if(userSlice == null){
+      navigate('/residential')
+    }else{
+      navigate('/layoutTwo/residential')
+    }
    }
   //  ==========navigate
     const handleContact=()=>{

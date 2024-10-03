@@ -20,8 +20,9 @@ export const Dashboard = () => {
     // remove(ref(db, 'User/' + data.uid))
     const auth = getAuth();
     signOut(auth).then(() => {
-      data ==null
-       navigate('/')
+      navigate('/')
+      localStorage.removeItem('userData')
+      window.location.reload();       
      })
        .catch((error) => {
      });

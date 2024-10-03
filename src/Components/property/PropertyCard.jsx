@@ -30,11 +30,11 @@ export const PropertyCard = () => {
   }
   // ========== navigate to commercial
   const handleNavigate =()=>{
-    navigate('/commercial')
-    // if(userSlice == null){
-    // }else{
-    //   navigate('/layoutTwo/commercial')
-    // }
+    if(userSlice == null){
+      navigate('/commercial')
+    }else{
+      navigate('/layoutTwo/commercial')
+    }
   }
   // ========== navigate to details
   const handleDetail =(items)=>{
