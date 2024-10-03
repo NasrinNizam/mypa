@@ -30,7 +30,7 @@ export const Featured = ({image ,country , views, brief, Ratings, price, categor
            {/* Content Section */}
            <div className="p-4 pt-0">
              {/* Title */}
-             <h3 className="text-lg font-semibold text-gray-800 mb-2 w-full h-[60px] mt-2">
+             <h3 className="text-lg font-semibold text-gray-800 mb-4 lg:mb-2 w-full h-[60px] mt-2">
                {brief}
              </h3>
      

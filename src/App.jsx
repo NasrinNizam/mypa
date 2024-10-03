@@ -31,7 +31,6 @@ function App() {
           <Route path='/login' element={<LoginPage />}/>
           <Route path='/residential' element={<PropertyCard />}/>
           <Route path='/commercial' element={<Commercial />}/>
-          <Route path='/commer' element={<Commercial />}/>
           <Route path='/wish' element={<WishPage />}/>
 
         </Route>
@@ -46,7 +45,6 @@ function App() {
           <Route path='/layoutTwo/login' element={<LoginPage />}/>
           <Route path='/layoutTwo/residential' element={<PropertyCard />}/>
           <Route path='/layoutTwo/commercial' element={<Commercial />}/>
-          <Route path='/layoutTwo/commer' element={<Commercial />}/>
           <Route path='/layoutTwo/wish' element={<WishPage />}/>
         </Route>
         <Route path='/propertyDetails' element={<PropertyDetails />}/>

@@ -20,6 +20,7 @@ export const Dashboard = () => {
     // remove(ref(db, 'User/' + data.uid))
     const auth = getAuth();
     signOut(auth).then(() => {
+      data ==null
        navigate('/')
      })
        .catch((error) => {
@@ -90,7 +91,7 @@ export const Dashboard = () => {
             </Link>
 
             <Link
-              to="/wish"
+              to="/layoutTwo/wish"
               className="flex items-center text-gray-600 hover:text-orange-500 transition-colors duration-300"
               onClick={() => setIsSidebarOpen(false)}
             >
@@ -168,9 +169,9 @@ export const Dashboard = () => {
             {/* Graph Section */}
             <div className="bg-white p-6 rounded-lg shadow-md lg:col-span-2">
               <h4 className="text-lg font-semibold mb-4">Total Views</h4>
-              <div className="h-40 bg-gray-100 flex items-center justify-center rounded-lg">
+              <div className="h-40 w-[500px] bg-gray-100 flex items-center justify-center rounded-lg">
                 {/* Placeholder for chart */}
-                <p className="text-gray-500">Graph goes here</p>
+                <img className='h-full w-full' src="/images/graph.jpg" alt="graph" />
               </div>
             </div>
 

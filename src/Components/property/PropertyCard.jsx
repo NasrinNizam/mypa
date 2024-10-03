@@ -15,6 +15,8 @@ export const PropertyCard = () => {
   const navigate = useNavigate()
   const dispatch =useDispatch()
 
+  const userSlice =useSelector((state)=>state.counter.value)
+
 
   // ======== get data from API =================
   const [data , setData] =useState(PropertyData)
@@ -29,6 +31,10 @@ export const PropertyCard = () => {
   // ========== navigate to commercial
   const handleNavigate =()=>{
     navigate('/commercial')
+    // if(userSlice == null){
+    // }else{
+    //   navigate('/layoutTwo/commercial')
+    // }
   }
   // ========== navigate to details
   const handleDetail =(items)=>{
@@ -119,7 +125,7 @@ export const PropertyCard = () => {
       <div className="flex justify-center items-center gap-10 flex-wrap">
           {
             data.map((item)=>(
-              <div key={item.id} className="lg:w-[300px] bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out m-4">
+              <div key={item.id} className="lg:w-[320px] bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out m-4">
       {/* Property Image */}
       <div className="relative">
         <img
@@ -143,7 +149,7 @@ export const PropertyCard = () => {
       {/* Property Details */}
       <div className="px-3 py-4">
         {/* Title */}
-        <h2 className="font-bold w-[350px] sm:w-[250px] text-md mb-1">{item.description} </h2>
+        <h2 className="font-bold lg:w-[300px] w-[250px] text-md mb-1">{item.description} </h2>
 
         {/* Price */}
         <div className="flex justify-between items-center">
@@ -154,21 +160,21 @@ export const PropertyCard = () => {
 
       {/* Property Features */}
       <div className="px-2 py-4 border-t flex justify-between">
-        <div className="flex items-center gap-1 text-gray-600 text-sm">
+        <div className="flex items-center gap-3 lg:gap-2 text-gray-600 text-sm">
           {/* Bedrooms */}
           <div className="flex items-center space-x-1">
             <FaBed className="text-md text-red-300 " />
-            <span className='text-[13px]'>{item.bedroom} Bed </span>
+            <span className='text-[13px] flex items-center gap-1'>{item.bedroom} <span className='hidden md:block'>Bed</span> </span>
           </div>
           {/* Bathrooms */}
           <div className="flex items-center space-x-1">
             <FaBath className="text-md text-red-300 " />
-            <span className='text-[13px]'>{item.bathroom} Bath </span>
+            <span className='text-[13px] flex items-center gap-1'>{item.bathroom} <span className='hidden md:block'>Bath</span> </span>
           </div>
           {/* Area */}
           <div className="flex items-center space-x-1">
             <RiNewsLine  className="text-md text-red-300 " />
-            <span className='text-[13px]'>{item.square_fit} sqft </span>
+            <span className='text-[13px] flex items-center gap-1'>{item.square_fit} <span className='hidden md:block'>sqft </span></span>
           </div>
         </div>
         <button onClick={()=>handleDetail(item)} className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>

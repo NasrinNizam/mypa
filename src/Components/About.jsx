@@ -6,7 +6,7 @@ import { FaUser, FaHistory, FaGlobe, FaHandshake, FaTools, FaBullseye, FaRegLigh
 export const About = () => {
   return (
     <>
-    <section className="bg-[#F8FBFA] relative w-full min-h-screen text-gray-900 py-16">
+    <section className="bg-[#F8FBFA] relative w-full min-h-screen text-gray-900 py-16 overflow-x-hidden">
          {/* ===== water mark ====== */}
          <div className="one absolute top-[-30%] left-0 w-[700px] z-[-1]  ">
           <img src="/images/Group58.svg" alt="watermark" />

@@ -96,6 +96,18 @@ export const LoginPage = () => {
             .catch((error) => {
               const errorCode = error.code;
               const errorMessage = error.message;
+               // ===== wrong email toast massage 
+                toast.error('Wrong email or Password', {
+                  position: "top-right",
+                  autoClose: 5000,
+                  hideProgressBar: false,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                  draggable: true,
+                  progress: undefined,
+                  theme: "dark",
+                  transition: Bounce,
+                  });
             });
         }
         }

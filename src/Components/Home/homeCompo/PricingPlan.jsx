@@ -28,7 +28,7 @@ const PricingPlan = () => {
     <div className="container py-10 bg-gray-50">
       <div className="max-w-5xl mx-auto text-center mb-8">
         <div className="flex items-center justify-center">
-            <img className='w-9 h-9' src="images/placeholder.png" alt="icon" />
+            <img className='w-9 h-9' src="/images/placeholder.png" alt="icon" />
             <h2 className="md:text-3xl text-xl font-bold font-roboto mb-4 inline-block">Our Pricing Plan</h2>
         </div>
         <div className="flex items-center justify-center mb-5 gap-2">

@@ -57,22 +57,22 @@ export const Footer = () => {
       {/* ============ icon part =========== */}
       <div className="w-full px-10 py-4 bg-white flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
         <div className="text-[29px]">
-          <img src="images/Logo.svg" alt="logo" />
+          <img src="/images/Logo.svg" alt="logo" />
         </div>
         <div className="flex items-center gap-[15px] sm:gap-[30px]">
-          <Link to="#"><img src="images/instagram.png" alt="Instagram" className="w-6 h-6" /></Link>
-          <Link to="#"><img src="images/twitter.png" alt="Twitter" className="w-6 h-6" /></Link>
-          <Link to="#"><img src="images/linkedin.png" alt="LinkedIn" className="w-6 h-6" /></Link>
-          <Link to="#"><img src="images/facebook.png" alt="Facebook" className="w-6 h-6" /></Link>
-          <Link to="#"><img src="images/youtube.png" alt="YouTube" className="w-6 h-6" /></Link>
+          <Link to="#"><img src="/images/instagram.png" alt="Instagram" className="w-6 h-6" /></Link>
+          <Link to="#"><img src="/images/twitter.png" alt="Twitter" className="w-6 h-6" /></Link>
+          <Link to="#"><img src="/images/linkedin.png" alt="LinkedIn" className="w-6 h-6" /></Link>
+          <Link to="#"><img src="/images/facebook.png" alt="Facebook" className="w-6 h-6" /></Link>
+          <Link to="#"><img src="/images/youtube.png" alt="YouTube" className="w-6 h-6" /></Link>
         </div>
   
         <div className="flex flex-wrap justify-center items-center w-[250px] md:w-[450px] gap-5">
-          <Link to="#"><img className="w-full" src="images/paypal.png" alt="PayPal" /></Link>
-          <Link to="#"><img className="w-full" src="images/visa.png" alt="Visa" /></Link>
-          <Link to="#"><img className="w-full" src="images/credit-card.png" alt="Credit Card" /></Link>
-          <Link to="#"><img className="w-full" src="images/Paystack_Logo.png" alt="Paystack" /></Link>
-          <Link to="#"><img className="w-full" src="images/Remita-Logo.png" alt="Remita" /></Link>
+          <Link to="#"><img className="w-full" src="/images/paypal.png" alt="PayPal" /></Link>
+          <Link to="#"><img className="w-full" src="/images/visa.png" alt="Visa" /></Link>
+          <Link to="#"><img className="w-full" src="/images/credit-card.png" alt="Credit Card" /></Link>
+          <Link to="#"><img className="w-full" src="/images/Paystack_Logo.png" alt="Paystack" /></Link>
+          <Link to="#"><img className="w-full" src="/images/Remita-Logo.png" alt="Remita" /></Link>
         </div>
       </div>
   

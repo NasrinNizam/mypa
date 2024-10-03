@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 
 import { useNavigate } from 'react-router-dom';
 import CommercialProperty from '../../CommercialData';
+import { useSelector } from 'react-redux';
 export const Commercial = () => {
    // ======= react variables =================================
    const [isResidential, setIsResidential]  = useState(true)
    const navigate = useNavigate()
+
+   const userSlice =useSelector((state)=>state.counter.value)
  
    // ======== get data from API =================
    const [data , setData] =useState(CommercialProperty)
@@ -20,8 +23,19 @@ export const Commercial = () => {
    // ========== function
    const handleNavigate =()=>{
      navigate('/residential')
+    // if(userSlice == null){
+    // }else{
+    //   navigate('/layoutTwo/residential')
+    // }
    }
-  //  ========================
+  //  ==========navigate
+    const handleContact=()=>{
+      if(userSlice == null){
+        navigate('/contact')
+      }else{
+        navigate('/layoutTwo/contact')
+      }
+    }
   return (
     <>
     <div className="container">
@@ -55,7 +69,7 @@ export const Commercial = () => {
       <div className="flex justify-center items-center gap-10 flex-wrap mt-10 mb-10">
          {
           data.map((item)=>(
-            <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden lg:w-[300px] w-[260px] ">
+            <div key={item.id} className="bg-white shadow-lg rounded-lg overflow-hidden lg:w-[320px] w-[270px] ">
             {/* Property Image */}
             <img
               className="w-full h-48 object-cover"
