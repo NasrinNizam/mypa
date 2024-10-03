@@ -11,15 +11,26 @@ export const Commercial = () => {
    const userSlice =useSelector((state)=>state.counter.value)
  
    // ======== get data from API =================
-   const [data , setData] =useState(CommercialProperty)
-   const handleData =(allData)=>{
-       const filterData = CommercialProperty.filter((filterProducts)=>{
-           return filterProducts.category == allData
+   const [data, setData] = useState(CommercialProperty.slice(0, 20)); // Initially show first 20 products
+   const [showAll, setShowAll] = useState(false); // To control the visibility of the "See All" button
+   const [filteredData, setFilteredData] = useState(CommercialProperty); // Store filtered data
  
-       })
-       setData(filterData)
-       console.log(allData)
-   }
+   // Function to handle data filtering based on type
+   const handleData = (allData) => {
+     const filterData = CommercialProperty.filter((product) => {
+       return product.category === allData;
+     });
+ 
+     setFilteredData(filterData); // Set the filtered data
+     setData(filterData.slice(0, 20)); // Initially display only the first 20 products of the filtered data
+     setShowAll(false); // Reset "See All" button visibility after filtering
+   };
+ 
+   // Function to show all the filtered data
+   const handleShowAll = () => {
+     setData(filteredData); // Display all filtered data
+     setShowAll(true); // Hide the "See All" button
+   };
    // ========== function
    const handleNavigate =()=>{
      if(userSlice == null){
@@ -97,7 +108,13 @@ export const Commercial = () => {
       
           ))
          }
-       </div>
+         </div>
+         {/* Show the "See All" button if not all data is being displayed */}
+             {!showAll && filteredData.length > 20 && (
+               <div className="text-center mt-6 mb-[50px] ">
+                 <button onClick={handleShowAll} className="px-7 py-3 bg-[#CA8A04] text-white rounded-lg"> See All</button>
+               </div>
+             )}
      </div>  
     </>
   )

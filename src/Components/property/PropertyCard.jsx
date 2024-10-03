@@ -14,20 +14,31 @@ export const PropertyCard = () => {
   const [favorite, setFavorite] = useState(true);
   const navigate = useNavigate()
   const dispatch =useDispatch()
-
+  // ===== get data from redux
   const userSlice =useSelector((state)=>state.counter.value)
 
-
   // ======== get data from API =================
-  const [data , setData] =useState(PropertyData)
-  const handleData =(allData)=>{
-      const filterData = PropertyData.filter((filterProducts)=>{
-          return filterProducts.type == allData
+  const [data, setData] = useState(PropertyData.slice(0, 20)); // Initially show first 20 products
+  const [showAll, setShowAll] = useState(false); // To control the visibility of the "See All" button
+  const [filteredData, setFilteredData] = useState(PropertyData); // Store filtered data
 
-      })
-      setData(filterData)
-      console.log(allData)
-  }
+  // Function to handle data filtering based on type
+  const handleData = (allData) => {
+    const filterData = PropertyData.filter((product) => {
+      return product.type === allData;
+    });
+
+    setFilteredData(filterData); // Set the filtered data
+    setData(filterData.slice(0, 20)); // Initially display only the first 20 products of the filtered data
+    setShowAll(false); // Reset "See All" button visibility after filtering
+  };
+
+  // Function to show all the filtered data
+  const handleShowAll = () => {
+    setData(filteredData); // Display all filtered data
+    setShowAll(true); // Hide the "See All" button
+  };
+
   // ========== navigate to commercial
   const handleNavigate =()=>{
     if(userSlice == null){
@@ -43,14 +54,6 @@ export const PropertyCard = () => {
     localStorage.setItem('propertyDetailsData', JSON.stringify(items))
   }
   // ========== navigate to wishlist
-  // const handleWishlist =(items)=>{
-  //   let listData = JSON.parse(localStorage.getItem('listData')) || [];
-  //   listData.push(items)
-  //   dispatch(addWishData(items))
-  //   localStorage.setItem('listData', JSON.stringify(listData));
-  //   setFavorite(! favorite)
-  //   console.log(items)
-  // };
 
   const handleWishlist = (items) => {
     // Parse localStorage data or initialize as an empty array
@@ -82,13 +85,6 @@ export const PropertyCard = () => {
     console.log(items);
   };
   
-  
-  
-  
-  
-
-
-
   
   return (
     <> 
@@ -183,6 +179,17 @@ export const PropertyCard = () => {
             ))
           }
        </div>
+        {/* Show the "See All" button if not all data is being displayed */}
+      {!showAll && filteredData.length > 20 && (
+        <div className="text-center mt-6 mb-[50px] ">
+          <button
+            onClick={handleShowAll}
+            className="px-7 py-3 bg-[#CA8A04] text-white rounded-lg"
+          >
+            See All
+          </button>
+        </div>
+      )}
      </div>  
     </>
   )

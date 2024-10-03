@@ -208,7 +208,6 @@ export const PropertyDetails = () => {
           {/* About This Property Section */}
           <h2 className="text-2xl font-bold mb-4">About This Property</h2>
           <div className="flex gap-4">
-            <div className="w-[6px] bg-yellow-500">.</div>
             <div className="lorem250">
               <p
                 className={`leading-relaxed ${
