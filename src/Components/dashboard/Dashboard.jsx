@@ -7,6 +7,7 @@ import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import { getDatabase, ref, set , remove} from "firebase/database";
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
+import { FaCartPlus } from 'react-icons/fa6';
 
 
 export const Dashboard = () => {
@@ -84,11 +85,11 @@ export const Dashboard = () => {
             </Link>
 
             <Link
-              to="#"
+              to="/layoutTwo/cart"
               className="flex items-center text-gray-600 hover:text-orange-500 transition-colors duration-300"
               onClick={() => setIsSidebarOpen(false)}
             >
-              <FaCogs className="mr-3" /> Appointments
+              <FaCartPlus className="mr-3" /> Cart
             </Link>
 
             <Link

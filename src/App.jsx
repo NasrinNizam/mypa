@@ -50,10 +50,10 @@ function App() {
           <Route path='/layoutTwo/commercial' element={<Commercial />}/>
           <Route path='/layoutTwo/wish' element={<WishPage />}/>
           <Route path='/layoutTwo/buy' element={<BuyProduct />}/>
-
+          <Route path='/layoutTwo/cart' element={<Cart />}/>
+          <Route path='*' element={<NotFound/>}/>
         </Route>
         <Route path='/propertyDetails' element={<PropertyDetails />}/>
-        <Route path='*' element={<NotFound/>}/>
       </Route>
     )
   )
