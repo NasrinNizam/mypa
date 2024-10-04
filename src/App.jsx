@@ -17,6 +17,8 @@ import { Commercial } from './Components/property/Commercial'
 import { PropertyDetails } from './Components/property/PropertyDetails'
 import { WishPage } from './Pages/WishPage'
 import { LayOutTwo } from './Layouts/LayOutTwo'
+import { Cart } from './Components/cart/Cart'
+import { BuyProduct } from './Pages/BuyProduct'
 function App() {
   const route = createBrowserRouter(
     createRoutesFromElements(
@@ -32,7 +34,8 @@ function App() {
           <Route path='/residential' element={<PropertyCard />}/>
           <Route path='/commercial' element={<Commercial />}/>
           <Route path='/wish' element={<WishPage />}/>
-
+          <Route path='/cart' element={<Cart />}/>
+          <Route path='/buyProduct' element={<BuyProduct />}/>
         </Route>
         <Route path='/layoutTwo' element={<LayOutTwo/>}>
             <Route path='/layoutTwo/profilePage' element={<ProfilePage/>}/>
@@ -46,6 +49,8 @@ function App() {
           <Route path='/layoutTwo/residential' element={<PropertyCard />}/>
           <Route path='/layoutTwo/commercial' element={<Commercial />}/>
           <Route path='/layoutTwo/wish' element={<WishPage />}/>
+          <Route path='/layoutTwo/buy' element={<BuyProduct />}/>
+
         </Route>
         <Route path='/propertyDetails' element={<PropertyDetails />}/>
         <Route path='*' element={<NotFound/>}/>

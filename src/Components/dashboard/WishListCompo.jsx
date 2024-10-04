@@ -25,14 +25,14 @@ const WishListCompo = () => {
               <div className="relative">
                 <img
                   className="w-full h-56 object-cover"
-                  src={item.imageTwo}
+                  src={item?.imageTwo}
                   alt="Property"
                   />
                 {/* Badges */}
                 <div className="absolute bottom-2 left-2 flex flex-col gap-2">
                   
-                  <span className={`bg-white border-[1px] ${item.authority?'border-green-400 border-[1px] ':'border-red-500 border-[1px] '} flex items-center gap-1 text-black text-xs font-bold px-2 py-1 rounded`}><span className={`p-[3px] ${item.authority?'bg-[#00CB84]':'bg-red-500'} rounded-full `}>{item.authority?<FaCheck  color='white' />:<ImCross   color='white' />} </span> Governors Consent / C of O</span>
-                  <span className={`bg-white border-[1px] ${item.permission?'border-green-400 border-[1px] ':'border-red-500 border-[1px] '} flex items-center gap-1 text-black text-xs font-bold px-2 py-1 rounded`}><span className={`p-[3px] ${item.permission?'bg-[#00CB84]':'bg-red-500'} rounded-full `}>{item.permission?<FaCheck  color='white' />:<ImCross   color='white' />} </span> Original Property Owner Etc.</span>
+                  <span className={`bg-white border-[1px] ${item?.authority?'border-green-400 border-[1px] ':'border-red-500 border-[1px] '} flex items-center gap-1 text-black text-xs font-bold px-2 py-1 rounded`}><span className={`p-[3px] ${item.authority?'bg-[#00CB84]':'bg-red-500'} rounded-full `}>{item.authority?<FaCheck  color='white' />:<ImCross   color='white' />} </span> Governors Consent / C of O</span>
+                  <span className={`bg-white border-[1px] ${item?.permission?'border-green-400 border-[1px] ':'border-red-500 border-[1px] '} flex items-center gap-1 text-black text-xs font-bold px-2 py-1 rounded`}><span className={`p-[3px] ${item.permission?'bg-[#00CB84]':'bg-red-500'} rounded-full `}>{item.permission?<FaCheck  color='white' />:<ImCross   color='white' />} </span> Original Property Owner Etc.</span>
                 </div>
                 {/* Favorite Icon */}
                 {/* <button className={` ${favorite? 'text-green-500 hover:text-green-700 bg-white' :'bg-green-500 text-white'} absolute top-2 right-2 w-[30px] h-[30px]  rounded-full flex justify-center items-center `}>
@@ -44,12 +44,12 @@ const WishListCompo = () => {
               {/* Property Details */}
               <div className="px-3 py-4">
                 {/* Title */}
-                <h2 className="font-bold w-[350px] sm:w-[250px] text-md mb-1">{item.description} </h2>
+                <h2 className="font-bold w-[350px] sm:w-[250px] text-md mb-1">{item?.description} </h2>
         
                 {/* Price */}
                 <div className="flex justify-between items-center">
                   <span className=" flex items-center gap-1 text-green-600 text-xs font-bold px-2 py-1 rounded-full"><IoGrid /> {wishSlice.type}</span>
-                  <span className="font-bold text-xl">{item.price}$ </span>
+                  <span className="font-bold text-xl">{item?.price}$ </span>
                 </div>
               </div>
         
@@ -59,17 +59,17 @@ const WishListCompo = () => {
                   {/* Bedrooms */}
                   <div className="flex items-center space-x-1">
                     <FaBed className="text-md text-red-300 " />
-                    <span className='text-[13px]'>{item.bedroom} Bed </span>
+                    <span className='text-[13px]'>{item?.bedroom} Bed </span>
                   </div>
                   {/* Bathrooms */}
                   <div className="flex items-center space-x-1">
                     <FaBath className="text-md text-red-300 " />
-                    <span className='text-[13px]'>{item.bathroom} Bath </span>
+                    <span className='text-[13px]'>{item?.bathroom} Bath </span>
                   </div>
                   {/* Area */}
                   <div className="flex items-center space-x-1">
                     <RiNewsLine  className="text-md text-red-300 " />
-                    <span className='text-[13px]'>{item.square_fit} sqft </span>
+                    <span className='text-[13px]'>{item?.square_fit} sqft </span>
                   </div>
                 </div>
                 <button className="bg-[#F6B400] hover:bg-yellow-600 text-white font-bold py-1 px-3 rounded"> Details</button>

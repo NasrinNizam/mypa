@@ -7,6 +7,7 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 import { MdPersonAddAlt1 } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom';
 import { BsUiChecksGrid } from "react-icons/bs";
+import { TiShoppingCart } from "react-icons/ti";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -80,7 +81,7 @@ export const Navbar = () => {
             {/* <div className="w-[40px] h-[40px] bg-[#C8F0E2] rounded-[5px] flex justify-center items-center">
               <img src="images/Massage.png" alt="icon" />
             </div> */}
-            <Link to="#" className="px-5 py-3 bg-[#00CB84] rounded-lg text-[18px] font-roboto font-normal text-white">Post Free Ads</Link>
+            <Link to="/cart" className="px-5 py-3 bg-[#00CB84] rounded-lg text-[18px] font-roboto font-normal text-white flex justify-center items-center gap-2"><TiShoppingCart size={30} />Cart</Link>
           </div>
         </div>
       </div>
