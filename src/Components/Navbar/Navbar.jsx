@@ -97,6 +97,7 @@ export const Navbar = () => {
             <li><NavLink to="/contact" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Contact</NavLink></li>
             <li><NavLink to="/login" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Login</NavLink></li>
             <li><NavLink to="/registration" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Vendor Register</NavLink></li>
+            <li><NavLink to="/cart" className="text-[18px] font-roboto font-normal text-[#000001]" onClick={toggleMenu}>Go To Cart</NavLink></li>
           </ul>
         </div>
       )}
